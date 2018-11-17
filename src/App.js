@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { renderRoutes} from 'react-router-config'
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import { renderRoutes } from 'react-router-config'
 import { Link } from 'react-router-dom'
 import { Button } from 'antd'
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
 class App extends Component {
   render() {
     const {
-      route: { routes } 
+      route: { routes },
     } = this.props
-    return (      
+    return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -25,15 +25,14 @@ class App extends Component {
           >
             Learn React
           </a>
-          <h1>I'll try Ant Design for React</h1>
           <Link to="/">Home</Link>
           <Link to="/basket">Basket</Link>
           {renderRoutes(routes)}
           <Button type="primary"> And Design</Button>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

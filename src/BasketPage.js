@@ -1,7 +1,5 @@
 import React from 'react'
 
-const BasketPage = () => 
-    <div>Basket Basket Page</div>
-
+const BasketPage = () => <div>Basket Basket Page</div>
 
 export default BasketPage

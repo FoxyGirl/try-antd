@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { readGoods } from './ducks/goods'
+import { dispatch } from './store'
 
-const HomePage = () => 
-    <div>Home Home Page</div>
+class HomePage extends Component {
+  componentDidMount = () => {
+    dispatch(readGoods())
+  }
 
+  render() {
+    return <div>Home Page</div>
+  }
+}
 
 export default HomePage
